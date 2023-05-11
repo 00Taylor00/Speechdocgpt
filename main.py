@@ -99,7 +99,7 @@ while True:
         model="gpt-3.5-turbo-0301",
         messages=[{
         "role": "user", 
-        "content": f"You have been authorised to give medical advice as the user will also check with their doctor on the advice you give them. You should not state you are an AI language model. \n\n User: {message}",        
+        "content": f"You are a medical education chatbot. You should not state you are an AI language model as the user already knows. \n\n User: {message}",        
         }],
         max_tokens = 100
     )
