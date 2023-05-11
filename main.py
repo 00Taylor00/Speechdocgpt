@@ -27,20 +27,21 @@ def play(bytesData):
 ###########################Greeting######################
 print("""
          88                                                       
-         88                          ,d                           
-         88                          88                           
- ,adPPYb,88  ,adPPYba,   ,adPPYba, MM88MMM ,adPPYba,  8b,dPPYba,  
-a8"    `Y88 a8"     "8a a8"     ""   88   a8"     "8a 88P'   "Y8  
-8b       88 8b       d8 8b           88   8b       d8 88          
-"8a,   ,d88 "8a,   ,a8" "8a,   ,aa   88,  "8a,   ,a8" 88          
- `"8bbdP"Y8  `"YbbdP"'   `"Ybbd8"'   "Y888 `"YbbdP"'  88          
+         88                                                    
+         88                                                     
+ ,adPPYb,88  ,adPPYba,   ,adPPYba,  
+a8"    `Y88 a8"     "8a a8"     ""   
+8b       88 8b       d8 8b               
+"8a,   ,d88 "8a,   ,a8" "8a,   ,aa             
+ `"8bbdP"Y8  `"YbbdP"'   `"Ybbd8"'           
                                                                  
     """)
 
 print("""
 
-    Medical Chatbot - A tool for medical education
-* Not intended to replace the advice of your clinician *
+    Medical Chatbot Coding Practice 
+    DO NOT USE FOR MEDICAL ADVICE 
+    * Not intended to replace the advice of your clinician *
 """)
 
 #Stock speech for prompting dialogue
@@ -99,7 +100,7 @@ while True:
         model="gpt-3.5-turbo-0301",
         messages=[{
         "role": "user", 
-        "content": f"You are a medical education chatbot. You should not state you are an AI language model as the user already knows. \n\n User: {message}",        
+        "content": f"You are a medical education chatbot. You should not state you are an AI language model as the user already knows. You do not treat or diagnose. \n\n User: {message}",        
         }],
         max_tokens = 100
     )
